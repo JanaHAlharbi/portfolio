@@ -1,176 +1,179 @@
-export default function PersonalLandingPage() {
-  const webSkills = [
-    "HTML5",
-    "CSS3",
-    "JavaScript",
-    "Responsive Design",
-    "React",
-    "Git & GitHub",
-  ];
+<!DOCTYPE html>
+<html lang="en">
 
-  const dataSkills = [
-    "Data Cleaning",
-    "Excel",
-    "SQL",
-    "Data Visualization",
-    "Problem Solving",
-  ];
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Jana Alharbi | Portfolio</title>
 
-  const projects = [
-    {
-      title: "Responsive Business Website",
-      description:
-        "Built a clean and responsive website with a user-friendly layout and modern design.",
-    },
-    {
-      title: "Interactive Dashboard",
-      description:
-        "Created a dashboard to display data clearly using charts, filters, and organized sections.",
-    },
-    {
-      title: "Portfolio Web Pages",
-      description:
-        "Developed simple front-end pages focused on structure, styling, and smooth user experience.",
-    },
-  ];
+<link rel="stylesheet" href="style.css">
 
-  return (
-    <div className="min-h-screen bg-white text-gray-900">
-      <section className="max-w-6xl mx-auto px-6 py-20">
-        <div className="grid md:grid-cols-2 gap-10 items-center">
-          <div>
-            <p className="text-sm uppercase tracking-[0.2em] text-gray-500 mb-4">
-              Web Developer & Data Analyst
-            </p>
-            <h1 className="text-4xl md:text-6xl font-bold leading-tight mb-6">
-              Hi, I’m Jana.
-              <br />
-              I build simple, clean, and responsive web experiences.
-            </h1>
-            <p className="text-lg text-gray-600 leading-8 mb-8 max-w-xl">
-              I am a web developer and data analyst passionate about building
-              useful digital experiences. My main focus is front-end web
-              development, creating websites that are modern, responsive, and
-              easy to use.
-            </p>
-            <div className="flex flex-wrap gap-4">
-              <a
-                href="#projects"
-                className="px-6 py-3 rounded-2xl bg-black text-white text-sm font-medium shadow-sm"
-              >
-                View My Work
-              </a>
-              <a
-                href="#contact"
-                className="px-6 py-3 rounded-2xl border border-gray-300 text-sm font-medium"
-              >
-                Contact Me
-              </a>
-            </div>
-          </div>
+</head>
 
-          <div className="bg-gray-50 rounded-3xl p-8 shadow-sm border border-gray-100">
-            <h2 className="text-2xl font-semibold mb-6">What I Do</h2>
-            <div className="space-y-5">
-              <div>
-                <h3 className="font-semibold text-lg mb-2">Web Development</h3>
-                <p className="text-gray-600 leading-7">
-                  I create responsive and user-friendly websites with clean code,
-                  clear structure, and modern design principles.
-                </p>
-              </div>
-              <div>
-                <h3 className="font-semibold text-lg mb-2">Data Analysis</h3>
-                <p className="text-gray-600 leading-7">
-                  I work with data to organize information, discover patterns,
-                  and present insights in a clear and useful way.
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
+<body>
 
-      <section className="max-w-6xl mx-auto px-6 py-8">
-        <div className="grid md:grid-cols-2 gap-8">
-          <div className="bg-white border border-gray-200 rounded-3xl p-8 shadow-sm">
-            <h2 className="text-2xl font-semibold mb-6">Web Development Skills</h2>
-            <div className="flex flex-wrap gap-3">
-              {webSkills.map((skill) => (
-                <span
-                  key={skill}
-                  className="px-4 py-2 rounded-full bg-gray-100 text-sm font-medium"
-                >
-                  {skill}
-                </span>
-              ))}
-            </div>
-          </div>
+<header>
 
-          <div className="bg-white border border-gray-200 rounded-3xl p-8 shadow-sm">
-            <h2 className="text-2xl font-semibold mb-6">Data Analysis Skills</h2>
-            <div className="flex flex-wrap gap-3">
-              {dataSkills.map((skill) => (
-                <span
-                  key={skill}
-                  className="px-4 py-2 rounded-full bg-gray-100 text-sm font-medium"
-                >
-                  {skill}
-                </span>
-              ))}
-            </div>
-          </div>
-        </div>
-      </section>
+<div class="container header-container">
 
-      <section id="projects" className="max-w-6xl mx-auto px-6 py-16">
-        <div className="mb-10">
-          <h2 className="text-3xl font-bold mb-3">Selected Projects</h2>
-          <p className="text-gray-600 max-w-2xl leading-7">
-            Here are a few examples of the kind of work I enjoy building, with a
-            strong focus on web interfaces and user experience.
-          </p>
-        </div>
+<h1 class="logo">Jana Alharbi</h1>
 
-        <div className="grid md:grid-cols-3 gap-6">
-          {projects.map((project) => (
-            <div
-              key={project.title}
-              className="rounded-3xl border border-gray-200 p-6 shadow-sm bg-white"
-            >
-              <h3 className="text-xl font-semibold mb-3">{project.title}</h3>
-              <p className="text-gray-600 leading-7">{project.description}</p>
-            </div>
-          ))}
-        </div>
-      </section>
+<nav>
+<ul>
+<li><a href="#about">About</a></li>
+<li><a href="#skills">Skills</a></li>
+<li><a href="#projects">Projects</a></li>
+<li><a href="#contact">Contact</a></li>
+</ul>
+</nav>
 
-      <section className="max-w-6xl mx-auto px-6 py-6">
-        <div className="rounded-3xl bg-black text-white p-10">
-          <h2 className="text-3xl font-bold mb-4">Why Work With Me?</h2>
-          <p className="text-gray-300 leading-8 max-w-3xl">
-            I focus on building websites that look professional, work smoothly
-            across devices, and give users a clear and enjoyable experience. I
-            also bring analytical thinking that helps me solve problems and make
-            smarter design decisions.
-          </p>
-        </div>
-      </section>
+</div>
 
-      <section id="contact" className="max-w-6xl mx-auto px-6 py-16">
-        <div className="text-center border border-gray-200 rounded-3xl p-10 shadow-sm">
-          <h2 className="text-3xl font-bold mb-4">Let’s Connect</h2>
-          <p className="text-gray-600 max-w-2xl mx-auto leading-8 mb-6">
-            I’m open to internship opportunities, freelance work, and projects
-            related to web development and data analysis.
-          </p>
-          <div className="space-y-2 text-gray-800 font-medium">
-            <p>Email: jalharbi4634@gmail.com</p>
-            <p>GitHub: github.com/JanaHAlharbi</p>
-            <p>LinkedIn: linkedin.com/in/jana-alharbi-202066207</p>
-          </div>
-        </div>
-      </section>
-    </div>
-  );
-}
+</header>
+
+
+<section class="hero">
+
+<div class="container hero-container">
+
+<h2>Web Developer & Data Analyst</h2>
+
+<p>
+I build modern responsive websites and analyze data to create useful insights.
+</p>
+
+<a href="#projects" class="btn">View My Work</a>
+
+</div>
+
+</section>
+
+
+<section id="about">
+
+<div class="container">
+
+<h2>About Me</h2>
+
+<p>
+I am a web developer and data analyst passionate about building clean,
+responsive web experiences. My focus is creating simple and modern
+interfaces that work across devices and deliver clear value.
+</p>
+
+</div>
+
+</section>
+
+
+<section id="skills">
+
+<div class="container">
+
+<h2>Skills</h2>
+
+<div class="skills-grid">
+
+<div class="skill">HTML</div>
+<div class="skill">CSS</div>
+<div class="skill">JavaScript</div>
+<div class="skill">React</div>
+<div class="skill">Git & GitHub</div>
+<div class="skill">Responsive Design</div>
+
+<div class="skill">Python</div>
+<div class="skill">SQL</div>
+<div class="skill">Data Analysis</div>
+<div class="skill">Excel</div>
+<div class="skill">Data Visualization</div>
+
+</div>
+
+</div>
+
+</section>
+
+
+<section id="projects">
+
+<div class="container">
+
+<h2>Projects</h2>
+
+<div class="projects-grid">
+
+<div class="project-card">
+
+<h3>Business Website</h3>
+
+<p>
+Responsive website with modern UI and mobile support.
+</p>
+
+</div>
+
+<div class="project-card">
+
+<h3>Data Dashboard</h3>
+
+<p>
+Dashboard displaying analytics and charts from datasets.
+</p>
+
+</div>
+
+<div class="project-card">
+
+<h3>Portfolio Website</h3>
+
+<p>
+Personal developer portfolio built with HTML, CSS and JS.
+</p>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+
+<section id="contact">
+
+<div class="container">
+
+<h2>Contact</h2>
+
+<p>Email: jalharbi4634@gmail.com</p>
+
+<p>
+GitHub:
+<a href="https://github.com/JanaHAlharbi">
+github.com/JanaHAlharbi
+</a>
+</p>
+
+<p>
+LinkedIn:
+<a href="https://linkedin.com/in/jana-alharbi-202066207">
+linkedin.com/in/jana-alharbi-202066207
+</a>
+</p>
+
+</div>
+
+</section>
+
+
+<footer>
+
+<p>© 2026 Jana Alharbi</p>
+
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+
+</html>
