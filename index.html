@@ -1,179 +1,54 @@
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Jana Alharbi | Portfolio</title>
-
-<link rel="stylesheet" href="style.css">
-
-</head>
-
-<body>
-
-<header>
-
-<div class="container header-container">
-
-<h1 class="logo">Jana Alharbi</h1>
-
-<nav>
-<ul>
-<li><a href="#about">About</a></li>
-<li><a href="#skills">Skills</a></li>
-<li><a href="#projects">Projects</a></li>
-<li><a href="#contact">Contact</a></li>
-</ul>
-</nav>
-
-</div>
-
-</header>
-
-
-<section class="hero">
-
-<div class="container hero-container">
-
-<h2>Web Developer & Data Analyst</h2>
-
-<p>
-I build modern responsive websites and analyze data to create useful insights.
-</p>
-
-<a href="#projects" class="btn">View My Work</a>
-
-</div>
-
-</section>
-
-
 <section id="about">
+  <div class="container">
+    <h2>About Me</h2>
 
-<div class="container">
+    <div class="about-card">
+      <div class="about-tabs">
+        <button class="about-tab active" data-about="intro">Who I Am</button>
+        <button class="about-tab" data-about="web">Web Development</button>
+        <button class="about-tab" data-about="data">Data Analysis</button>
+      </div>
 
-<h2>About Me</h2>
+      <div class="about-content active" id="intro">
+        <h3>A motivated builder with a clear focus</h3>
+        <p>
+          I am Jana Alharbi, a web developer and data analyst who enjoys building
+          clean, responsive, and user-friendly digital experiences. I like turning
+          ideas into practical websites that look modern and work smoothly.
+        </p>
+      </div>
 
-<p>
-I am a web developer and data analyst passionate about building clean,
-responsive web experiences. My focus is creating simple and modern
-interfaces that work across devices and deliver clear value.
-</p>
+      <div class="about-content" id="web">
+        <h3>My web development focus</h3>
+        <p>
+          I focus on front-end development and enjoy creating websites with clear
+          structure, strong visual design, and responsive layouts that work well
+          across devices.
+        </p>
+      </div>
 
-</div>
+      <div class="about-content" id="data">
+        <h3>My data analysis side</h3>
+        <p>
+          I also work with data to organize information, identify patterns, and
+          present insights in a simple and useful way that supports better decisions.
+        </p>
+      </div>
 
+      <div class="about-highlight">
+        <span>Currently focused on:</span>
+        <strong>Building strong web development skills and growing as a developer.</strong>
+      </div>
+
+      <button id="toggleMoreBtn" class="about-more-btn">Show More</button>
+
+      <div id="moreAbout" class="more-about">
+        <p>
+          I am interested in internships and opportunities where I can improve my
+          skills, contribute to real projects, and keep growing in both web
+          development and analytical thinking.
+        </p>
+      </div>
+    </div>
+  </div>
 </section>
-
-
-<section id="skills">
-
-<div class="container">
-
-<h2>Skills</h2>
-
-<div class="skills-grid">
-
-<div class="skill">HTML</div>
-<div class="skill">CSS</div>
-<div class="skill">JavaScript</div>
-<div class="skill">React</div>
-<div class="skill">Git & GitHub</div>
-<div class="skill">Responsive Design</div>
-
-<div class="skill">Python</div>
-<div class="skill">SQL</div>
-<div class="skill">Data Analysis</div>
-<div class="skill">Excel</div>
-<div class="skill">Data Visualization</div>
-
-</div>
-
-</div>
-
-</section>
-
-
-<section id="projects">
-
-<div class="container">
-
-<h2>Projects</h2>
-
-<div class="projects-grid">
-
-<div class="project-card">
-
-<h3>Business Website</h3>
-
-<p>
-Responsive website with modern UI and mobile support.
-</p>
-
-</div>
-
-<div class="project-card">
-
-<h3>Data Dashboard</h3>
-
-<p>
-Dashboard displaying analytics and charts from datasets.
-</p>
-
-</div>
-
-<div class="project-card">
-
-<h3>Portfolio Website</h3>
-
-<p>
-Personal developer portfolio built with HTML, CSS and JS.
-</p>
-
-</div>
-
-</div>
-
-</div>
-
-</section>
-
-
-<section id="contact">
-
-<div class="container">
-
-<h2>Contact</h2>
-
-<p>Email: jalharbi4634@gmail.com</p>
-
-<p>
-GitHub:
-<a href="https://github.com/JanaHAlharbi">
-github.com/JanaHAlharbi
-</a>
-</p>
-
-<p>
-LinkedIn:
-<a href="https://linkedin.com/in/jana-alharbi-202066207">
-linkedin.com/in/jana-alharbi-202066207
-</a>
-</p>
-
-</div>
-
-</section>
-
-
-<footer>
-
-<p>© 2026 Jana Alharbi</p>
-
-</footer>
-
-<script src="script.js"></script>
-
-</body>
-
-</html>
